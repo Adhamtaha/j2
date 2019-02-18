@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#define  MAX( a, b ) ( ( a > b) ? a : b ) 
-#define  MIN( a, b ) ( ( a < b) ? a : b ) 
+#define  MAX( a, b ) ( ( a > b) ? a : b )
+#define  MIN( a, b ) ( ( a < b) ? a : b )
 
 #define MEM_LEN 65536
 #define PROG_BEGIN 65536/2
@@ -30,6 +30,8 @@ int main( void ) {
     char c;
     int i = PROG_BEGIN;
     *ip = PROG_BEGIN;
+
+    printf("Hej med dig");
 
     while( ( c = getchar()) != EOF && i < MEM_LEN) {
 	mem[i++] = c;
